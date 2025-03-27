@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="famil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-27 12:06:34 p. m."/>
+        <attribute name="created" value="ZmFtaWw7VklDS09FVDsyMDI1LTAzLTI3OzExOjQyOjI2IGEuIG0uOzI1MDg="/>
+        <attribute name="edited" value="ZmFtaWw7VklDS09FVDsyMDI1LTAzLTI3OzEyOjA2OjM0IHAuIG0uOzE7MjYzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Donas" type="Integer" array="False" size=""/>
+            <declare name="Costo" type="Integer" array="False" size=""/>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <assign variable="Donas" expression="10"/>
+            <assign variable="N" expression="0"/>
+            <assign variable="Costo" expression="0"/>
+            <input variable="N"/>
+            <if expression="N&gt;=30">
+                <then>
+                    <assign variable="Costo" expression="(N*donas)-(N*2)"/>
+                    <output expression="Costo" newline="True"/>
+                </then>
+                <else>
+                    <if expression="N&gt;=50">
+                        <then>
+                            <assign variable="Costo" expression="(N*Donas)-(N*1)"/>
+                            <output expression="Costo" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="Costo" expression="(N*Donas)"/>
+                            <output expression="Costo" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
