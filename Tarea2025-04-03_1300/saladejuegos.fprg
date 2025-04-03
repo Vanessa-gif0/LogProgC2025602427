@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="saladejuegos"/>
+        <attribute name="authors" value="famil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 09:59:45 p. m."/>
+        <attribute name="created" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTAxOzA5OjAwOjMzIHAuIG0uOzI1MTU="/>
+        <attribute name="edited" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTAxOzA5OjU5OjQ1IHAuIG0uOzE7MjY0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <assign variable="Edad" expression="0"/>
+            <input variable="Edad"/>
+            <if expression="Edad&gt;=18">
+                <then>
+                    <output expression="&quot;Paga $500 pesos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&gt;=4">
+                        <then>
+                            <output expression="&quot;Paga $200 pesos&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad&gt;0">
+                                <then>
+                                    <output expression="&quot;Entra gratis&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Andb"/>
+        <attribute name="authors" value="famil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 12:46:21 a. m."/>
+        <attribute name="created" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTAxOzEwOjAzOjQ1IHAuIG0uOzI1MTM="/>
+        <attribute name="edited" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTAzOzEyOjQ2OjIxIGEuIG0uOzE7MjYxMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nombre" type="String" array="False" size=""/>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <declare name="Hombre" type="String" array="False" size=""/>
+            <declare name="Mujer" type="String" array="False" size=""/>
+            <declare name="N" type="String" array="False" size=""/>
+            <declare name="M" type="String" array="False" size=""/>
+            <assign variable="Nombre" expression="&quot;&quot;"/>
+            <assign variable="Sexo" expression="&quot;&quot;"/>
+            <assign variable="Mujer" expression="&quot;&quot;"/>
+            <assign variable="Hombre" expression="&quot;&quot;"/>
+            <output expression="&quot;Indica tu sexo&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <output expression="&quot;Indica tu nombre&quot;" newline="True"/>
+            <input variable="Nombre"/>
+            <if expression="Sexo==Mujer and Nombre&lt;&quot;M&quot; or Sexo==Hombre and Nombre&gt;&quot;N&quot;">
+                <then>
+                    <output expression="&quot;Grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Grupo B&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
