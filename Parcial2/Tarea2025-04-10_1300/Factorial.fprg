@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="famil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 12:17:23 p. m."/>
+        <attribute name="created" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTA4OzA1OjQ0OjEzIHAuIG0uOzI1MjQ="/>
+        <attribute name="edited" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTA5OzEyOjE3OjIzIHAuIG0uOzE7MjYzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa un Numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="Fact" type="Real" array="False" size=""/>
+            <declare name="i" type="Real" array="False" size=""/>
+            <assign variable="Fact" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <do expression="i&lt;=n">
+                <assign variable="Fact" expression="Fact*i"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="Fact" newline="True"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>

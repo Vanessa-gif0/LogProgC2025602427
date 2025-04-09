@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="sucesion"/>
+        <attribute name="authors" value="famil"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-09 01:08:24 p. m."/>
+        <attribute name="created" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTA5OzEyOjM3OjA5IGEuIG0uOzI1MTU="/>
+        <attribute name="edited" value="ZmFtaWw7VklDS09FVDsyMDI1LTA0LTA5OzAxOjA4OjI0IHAuIG0uOzI7MjYzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, Suc, i" type="Real" array="False" size=""/>
+            <assign variable="A" expression="1"/>
+            <assign variable="B" expression="2"/>
+            <assign variable="i" expression="2"/>
+            <while expression="i&lt;=64">
+                <assign variable="Suc" expression="A+B"/>
+                <output expression="Suc" newline="True"/>
+                <assign variable="A" expression="B"/>
+                <assign variable="B" expression="Suc"/>
+                <assign variable="i" expression="i+1"/>
+                <output expression="i" newline="True"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
